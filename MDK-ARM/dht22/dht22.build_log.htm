@@ -1,0 +1,93 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.39.0.0
+Copyright (C) 2023 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Bao Khanh, VNU, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.39.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.39.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.2.0.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+D:\uvision\demo_apps\dht22\dht22\MDK-ARM\dht22.uvprojx
+Project File Date:  05/21/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin'
+Build target 'dht22'
+compiling main.c...
+..\MDK-ARM\dht22.h(4): warning:  #1295-D: Deprecated declaration DHT22_Read - give arg types
+  uint8_t DHT22_Read();
+../Core/Src/main.c(32): warning:  #177-D: variable "response"  was declared but never referenced
+  	uint8_t response;
+../Core/Src/main.c(33): warning:  #177-D: variable "humidity_first_byte"  was declared but never referenced
+  	uint8_t humidity_first_byte;
+../Core/Src/main.c(34): warning:  #177-D: variable "humidity_second_byte"  was declared but never referenced
+  	uint8_t humidity_second_byte;
+../Core/Src/main.c(35): warning:  #177-D: variable "temperature_first_byte"  was declared but never referenced
+  	uint8_t temperature_first_byte;
+../Core/Src/main.c(36): warning:  #177-D: variable "temperature_second_byte"  was declared but never referenced
+  	uint8_t temperature_second_byte;
+../Core/Src/main.c(37): warning:  #177-D: variable "sum"  was declared but never referenced
+  	uint8_t sum;
+../Core/Src/main.c(39): warning:  #177-D: variable "raw_humidity"  was declared but never referenced
+  	uint16_t raw_humidity;
+../Core/Src/main.c(40): warning:  #177-D: variable "raw_temperature"  was declared but never referenced
+  	uint16_t raw_temperature;
+../Core/Src/main.c(42): warning:  #177-D: variable "humidity"  was declared but never referenced
+  	float humidity;
+../Core/Src/main.c(43): warning:  #177-D: variable "temperature"  was declared but never referenced
+  	float temperature;
+../Core/Src/main.c(45): warning:  #177-D: variable "temperature1"  was declared but never referenced
+  	uint8_t temperature1;
+../Core/Src/main.c(46): warning:  #177-D: variable "humidity1"  was declared but never referenced
+  	uint8_t humidity1;
+../Core/Src/main.c(48): warning:  #177-D: variable "adcValue0"  was declared but never referenced
+  	uint32_t adcValue0;
+../Core/Src/main.c(49): warning:  #177-D: variable "adcValue1"  was declared but never referenced
+  	uint32_t adcValue1;
+../Core/Src/main.c(51): warning:  #177-D: variable "dirt_value"  was declared but never referenced
+  	uint8_t dirt_value;
+../Core/Src/main.c: 16 warnings, 0 errors
+linking...
+Program Size: Code=6156 RO-data=612 RW-data=12 ZI-data=1636  
+FromELF: creating hex file...
+"dht22\dht22.axf" - 0 Error(s), 16 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM::CMSIS@5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F4xx_DFP.2.17.1.pack
+                Keil::STM32F4xx_DFP@2.17.1
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_dht22
+  C:/Users/ADMIN/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+  C:/Users/ADMIN/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE@5.6.0
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>
